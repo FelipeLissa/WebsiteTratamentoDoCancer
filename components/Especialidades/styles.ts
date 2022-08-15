@@ -5,24 +5,28 @@ import styled from 'styled-components';
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 3rem;
+    padding: 3vw;
     background-color: aliceblue;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 1vw;
+    margin-right: 1vw;
     box-shadow: 0px 0px 0.5em ${({ theme }) => theme.black};
-    border-radius: 1rem;
-    border: 1px solid black;
+    border-radius: 1vw;
+    border: 0.06vw solid black;
 
     
 
     .divelement {
-        margin-top: 3rem;
+        margin-top: 3vw;
+
+        p{
+            font-size: 1vw;
+        }
 
         h1 {
             color: ${({theme}) => theme.primary};
-            font-size: 2rem;
-            padding-bottom: 0.5rem;
-            padding: 2rem 2rem 2rem 1rem;
+            font-size: 2vw;
+            padding-bottom: 0.5vw;
+            padding: 2vw 2vw 2vw 1vw;
     }
     >img {
         cursor: pointer;

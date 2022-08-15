@@ -4,7 +4,7 @@ import { useEffect } from "react"
 import { Header } from "../../components/Header"
 import "aos/dist/aos.css"
 import { Footer } from "../../components/Footer"
-import { ConditionsTreated } from "../../components/ConditionsTreated"
+import { ConditionsTreated } from "../../components/Especialidades"
 
 
 export default function Projetos () {

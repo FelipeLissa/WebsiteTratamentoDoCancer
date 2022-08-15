@@ -1,27 +1,28 @@
 import styled from 'styled-components';
 
+
+export const Container0 = styled.div `
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+margin: 0 1vw 0 1vw;
+box-shadow: 0 0 0.5em ${({ theme }) => theme.black};
+background-color: aliceblue;
+border-radius: 1vw;
+border: 1px solid black;
+padding: 4vw;
+gap:5vw;`
+
+
 export const Container = styled.section`
     display: flex;
-    align-items: flex-start;
-    padding: 4rem;
-    justify-content: center;
-    align-content: center;
-    gap: 6rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    box-shadow: 0 0 0.5em ${({ theme }) => theme.black};
-    margin-bottom: -1px;
-    background-color: aliceblue;
-    border-radius: 15px 15px 0px 0px;
-    border: 1px solid black;
     
 
     img {
-        margin-top: 2rem;
-        width: 550px;
-        height: 440px;
+        width: 34vw;
+        height: 27vw;
         border-radius: 5px;
-        width: fit-content;
     }
     
     div { 
@@ -35,18 +36,18 @@ export const Container = styled.section`
     font-family: adage-script-jf, sans-serif;
     font-style: italic;
     font-weight: 500;
-    font-size:7rem;
+    font-size:7vw;
     }
     .a2{
     font-family: adage-script-jf, sans-serif;;
     font-style: italic;
     font-weight: 500;
-    font-size:6rem;
+    font-size:6vw;
     }
 }
     h2{
-    margin-bottom: 2rem;
-    font-size:1.75rem;
+    margin-bottom: 2vw;
+    font-size:1.75vw;
     color:${({theme}) => theme.primary}  ;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -54,101 +55,99 @@ export const Container = styled.section`
 }
 
     li {
-        margin-bottom: 10px; 
+        margin-bottom: 1vw; 
         font-weight: 300;
         font-family: 'Inter', sans-serif;
-        font-size: 1.05rem;
+        font-size: 1.05vw;
     }
-`
-
-export const Container1 = styled.section`
-    display: flex;
-    flex-direction: row;
-    justify-content: center;    
-    padding: 2rem;
-    background-color: aliceblue;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: -1px;
-    box-shadow: 0px 0px 0.5em ${({ theme }) => theme.black};
-    clip-path: inset(0px -0.25em 0em -0.25em);
-    gap:3rem;
 
 
+    @media only screen and (max-width: 960px) {
+        /* styles for browsers larger than 960px; */
+    }
+
+    @media only screen and (max-width: 1440px) {
+        /* styles for browsers larger than 1440px; */
+    }
+
+    @media only screen and (max-width: 2000px) {
+        /* for sumo sized (mac) screens */
+    }
+
+    @media only screen and (max-device-width: 480px) {
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+    }
+        
+    @media only screen and (device-width: 768px) {
+       /* default iPad screens */
+           }
+ `
+
+export const Container1 = styled.div`
+    display: flex; 
+
+    a {
+        margin: 1vw;
+    }
     img {
         cursor: pointer;
-        width: 12rem;
-        height: 6rem;
+        width: 12vw;
+        height: 6vw;
         border-radius: 5px;
         transition:0.5s;
         box-shadow: 0 0 0.25em ${({ theme }) => theme.black};
 
     } img:hover { 
-    	transform: scale(1.2); 
-        cursor: pointer;
+    	transform: scale(1.1);
     }
 `;
 export const Container2 = styled.div`
     display: flex;
     flex-direction: column;
-    align-items:center;
-    padding: 4rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    background-color: aliceblue;
-    box-shadow: 0px 0px 0.5em ${({ theme }) => theme.black};
-    clip-path: inset(0px -0.25em -0.25em -0.25em);
-    border-radius: 0px 0px 15px 15px;
-    margin-top: -8px;
-    
+
+
     .title {
-    font-size:3rem;
-    margin-bottom:1.5rem;
+    font-size:3vw;
     color:${({theme}) => theme.black}  ;
     font-family: scotch-display, sans-serif;
     font-style: normal;
     font-weight: bold;
     text-align: center;
-    width: 100%;
     }
-    section {
+
+
+    .content {
         display: flex;
-        align-content: center;
-        justify-content: center;
-        gap: 3rem;
-        
     }
   
-    div {
+    .content-children {
         display: flex;
+        width:25vw;
+        margin: 1vw;
+        padding: 0.2vw;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
         text-align: center;
-        background-color: aliceblue;
-        padding: 20px;
         border-radius: 5px;
-        transition: 0.5s; 
         border: 1px solid black;
-        width: 100%;
-        gap: 1rem;
+        gap: 1vw;
+        transition: 0.5s; 
         cursor: pointer;
-    }div:hover {
+    }.content-children:hover {
         transform: scale(1.05); 
     }
     h1{
-        font-size: 20px;
+        font-size: 1.2vw;
         font-weight: 500;
         width: 100%;
         letter-spacing: 0.01px;
     }
     p {
         text-align: center;
+        font-size: 0.8vw;
         font-weight: 300;
         color: black;
     }
-    a {
-        scale: 2;
+    a { 
         color: black;
     }a:hover {
         color: ${({theme}) => theme.primary};

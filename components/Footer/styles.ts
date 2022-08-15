@@ -2,12 +2,11 @@ import {lighten } from 'polished';
 import styled from 'styled-components';
 
 export const Container = styled.footer`
-    width: 100%;
     display: flex;
-    height: 5rem;
+    height: 5vw;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    margin: 2vw;
 
 
     >div {
@@ -16,12 +15,12 @@ export const Container = styled.footer`
         justify-content: space-between;
 
         button {
-            background: none;
+            background: transparent;
             border: none;
             color: ${({theme}) => lighten(0.5, theme.black)};
             text-transform: uppercase;
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 1vw;
             transition:0.3s;
 
             &:hover {
@@ -32,12 +31,12 @@ export const Container = styled.footer`
         section {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 1vw;
         }
 
         svg {
-            width: 2rem;
-            height: 2rem;
+            width: 2vw;
+            height: 2vw;
             color: ${({theme}) => lighten(0.5, theme.black)};
             transition: 0.5s;
             cursor: pointer;
@@ -46,19 +45,5 @@ export const Container = styled.footer`
                 color: ${({theme}) => theme.black};
             }
         }
-    
-    @media (max-width: 700px) {
-        button {
-            font-size: 0.9rem;
-        }
-
-        >section {
-            gap: 0.5rem;
-            svg {
-                width: 1.5rem;
-                height: 1.5rem;
-            }
-        }
-    }
     }
 `;

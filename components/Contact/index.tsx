@@ -6,7 +6,9 @@ import { Container } from './styles';
 
 export function Contact() {
   return (
-    <Container data-aos="fade-left">
+    <Container 
+    //data-aos="fade-left"
+    >
       <Title title={'Contatos e localização'} ></Title>
 
 

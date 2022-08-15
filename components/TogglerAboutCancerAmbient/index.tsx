@@ -7,7 +7,9 @@ import { Container } from './styles';
 export function TogglerAboutCancerAmbient() {
   return (
     <>
-    <Container data-aos="fade-left">
+    <Container 
+    //data-aos="fade-left"
+    >
     <Title title='Entendendo o Câncer'></Title>
        <h3>O QUE É O CÂNCER?</h3>
        <p>&nbsp;&nbsp;&nbsp;Normalmente, as células do nosso corpo crescem e se dividem para formar novas células e tecidos, dependendo das necessidades do nosso corpo. No processo normal, as células envelhecidas e lesadas (machucadas), morrem e novas células normais tomam o seu lugar. Às vezes, este processo natural “vai mal”, células anormais se formam e se multiplicam, tornando-se uma massa de tecido chamada tumor. Os tumores podem ser benignos ou malignos:</p>

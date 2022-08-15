@@ -5,18 +5,18 @@ export const ToggleStyled = styled.div`
     div.style {
     display: flex;
     flex-direction: column;
-    padding: 1rem 0rem 1rem 1rem;
-    border-bottom: 1px solid black;
-    width: 1000px;
+    padding: 1vw 0vw 1vw 1vw;
+    border-bottom: 0.06vw solid black;
+    width: 70vw;
     
 }
 
     h4{
     color: ${({theme}) => theme.black};
     cursor: pointer;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    margin-left: 5rem;
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    margin-left: 5vw;
 
     a {
         color: ${({theme}) => theme.error};
@@ -25,15 +25,14 @@ export const ToggleStyled = styled.div`
 
     div.content-parent {
         overflow: hidden;
-        height: 0px;
         transition: all ease 0.3s;
         
     }
         
 
       .content {
-            font-weight: 800px;
-            width: 1200px;
+            font-weight: 800;
+            width: 75vw;
         }
             
 `;
