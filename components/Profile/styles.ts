@@ -4,7 +4,6 @@ import styled from 'styled-components';
 export const Container0 = styled.div `
 display:flex;
 flex-direction:column;
-justify-content:center;
 align-items:center;
 margin: 0 1vw 0 1vw;
 box-shadow: 0 0 0.5vw ${({ theme }) => theme.black};
@@ -17,11 +16,12 @@ gap:5vw;`
 
 export const Container = styled.section`
     display: flex;
+    align-items: center;
     
 
     img {
         width: 34vw;
-        height: 27vw;
+        height: 30vw;
         border-radius: 0.3vw;
     }
     
