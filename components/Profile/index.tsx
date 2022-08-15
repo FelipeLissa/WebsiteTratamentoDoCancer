@@ -6,7 +6,7 @@ export function Perfil() {
   return (
     <>
     <Container0 
-    //data-aos="fade-left"
+    data-aos="fade-left"
     >
 
 

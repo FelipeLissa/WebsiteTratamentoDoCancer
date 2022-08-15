@@ -56,7 +56,6 @@ interface NavLinkProps {
 }
 export const NavLinkContainer = styled.li<NavLinkProps>`
 p{  max-width: 10rem;
-    padding-top: 0.75vw;
     font-family: gravesend-sans, sans-serif;
     font-style: normal;
     font-weight: 500;
