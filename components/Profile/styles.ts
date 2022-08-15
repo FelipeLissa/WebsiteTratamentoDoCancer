@@ -22,7 +22,7 @@ export const Container = styled.section`
     img {
         width: 34vw;
         height: 27vw;
-        border-radius: 5px;
+        border-radius: 0.3vw;
     }
     
     div { 
@@ -122,6 +122,9 @@ export const Container2 = styled.div`
   
     .content-children {
         display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
         width:25vw;
         margin: 1vw;
         padding: 0.2vw;
@@ -132,13 +135,16 @@ export const Container2 = styled.div`
         gap: 1vw;
         transition: 0.5s; 
         cursor: pointer;
+        
+        h1{
+            max-width: 15vw;
+            font-size: 1.2vw;
+            font-weight: 500;
+            text-align: center;
+
+        }
     }.content-children:hover {
         transform: scale(1.05); 
-    }
-    h1{
-        font-size: 1.2vw;
-        font-weight: 500;
-        width: 100%;
     }
     p {
         text-align: center;

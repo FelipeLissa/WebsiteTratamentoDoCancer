@@ -5,7 +5,7 @@ export const Container = styled.header`
 display: flex;
 justify-content: center;
 height: 7vw;
-margin: 0.4vw 0 -0.4vw 0;
+margin: 0.4vw 0 -0.6vw 0;
 
 img {
     width:15vw;

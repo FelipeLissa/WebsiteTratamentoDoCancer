@@ -50,6 +50,8 @@ export function Perfil() {
     </a>
 
     </Container1>
+
+    
     <Container2>
     <h1 className='title'>Especialidades</h1>
         <div className='content'>
