@@ -6,7 +6,7 @@ export function Perfil() {
   return (
     <>
     <Container0 
-    //data-aos="fade-left"
+    data-aos="fade-left"
     >
 
 
@@ -51,7 +51,7 @@ export function Perfil() {
 
     </Container1>
 
-    
+
     <Container2>
     <h1 className='title'>Especialidades</h1>
         <div className='content'>

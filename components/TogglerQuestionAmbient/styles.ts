@@ -23,7 +23,7 @@ li {
 }
 
 h3 {
-    color: ${({theme}) => theme.primary};
+    color: ${({ theme }) => theme.primary};
     font-size: 2vw;
     margin-bottom: 1vw;
 }

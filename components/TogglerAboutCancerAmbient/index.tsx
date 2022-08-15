@@ -8,7 +8,7 @@ export function TogglerAboutCancerAmbient() {
   return (
     <>
     <Container 
-    //data-aos="fade-left"
+    data-aos="fade-left"
     >
     <Title title='Entendendo o Câncer'></Title>
        <h3>O QUE É O CÂNCER?</h3>
