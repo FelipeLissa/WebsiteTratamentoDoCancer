@@ -28,11 +28,4 @@ div.style {
         transition: all ease 0.3s;
         
     }
-        
-
-      .content {
-            font-weight: 800;
-            width: 75vw;
-        }
-            
 `;

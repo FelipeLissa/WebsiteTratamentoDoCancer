@@ -7,7 +7,7 @@ export const Container = styled.div`
     padding: 3vw;
     background-color: aliceblue;
     margin: 0 1vw 0 1vw;
-    box-shadow: 0 0 0.5em ${({ theme }) => theme.black};
+    box-shadow: 0 0 0.5vw ${({ theme }) => theme.black};
     border-radius: 1vw;
     border: 0.06vw solid black;
 
@@ -32,5 +32,7 @@ li {
     margin: 0vw 0vw 1vw 6vw;
     max-width: 65vw;
     align-items: center;
+    font-weight: 300;
+    font-size: 1.05vw;
 }
 `;

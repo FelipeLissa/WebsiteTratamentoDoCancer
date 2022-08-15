@@ -7,10 +7,10 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 margin: 0 1vw 0 1vw;
-box-shadow: 0 0 0.5em ${({ theme }) => theme.black};
+box-shadow: 0 0 0.5vw ${({ theme }) => theme.black};
 background-color: aliceblue;
 border-radius: 1vw;
-border: 1px solid black;
+border: 0.06vw solid black;
 padding: 4vw;
 gap:5vw;`
 
@@ -57,8 +57,8 @@ export const Container = styled.section`
     li {
         margin-bottom: 1vw; 
         font-weight: 300;
-        font-family: 'Inter', sans-serif;
         font-size: 1.05vw;
+        font-family: 'Inter', sans-serif;
     }
 
 
@@ -93,9 +93,9 @@ export const Container1 = styled.div`
         cursor: pointer;
         width: 12vw;
         height: 6vw;
-        border-radius: 5px;
+        border-radius: 0.3vw;
         transition:0.5s;
-        box-shadow: 0 0 0.25em ${({ theme }) => theme.black};
+        box-shadow: 0 0 0.25vw ${({ theme }) => theme.black};
 
     } img:hover { 
     	transform: scale(1.1);
@@ -127,8 +127,8 @@ export const Container2 = styled.div`
         padding: 0.2vw;
         flex-direction: column;
         text-align: center;
-        border-radius: 5px;
-        border: 1px solid black;
+        border-radius: 0.3vw;
+        border: 0.06vw solid black;
         gap: 1vw;
         transition: 0.5s; 
         cursor: pointer;
@@ -139,7 +139,6 @@ export const Container2 = styled.div`
         font-size: 1.2vw;
         font-weight: 500;
         width: 100%;
-        letter-spacing: 0.01px;
     }
     p {
         text-align: center;

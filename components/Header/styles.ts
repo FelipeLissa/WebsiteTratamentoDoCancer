@@ -5,7 +5,7 @@ export const Container = styled.header`
 display: flex;
 justify-content: center;
 height: 7vw;
-margin-bottom: -2px;
+margin: 0.4vw 0 -0.4vw 0;
 
 img {
     width:15vw;
@@ -45,7 +45,6 @@ gap:0.5rem;
        /* styles for mobile browsers smaller than 480px; (iPhone) */
     }
      
-    }
 `;
 
 

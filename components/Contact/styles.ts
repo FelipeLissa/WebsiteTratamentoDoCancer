@@ -8,7 +8,7 @@ export const Container = styled.div`
     background-color: aliceblue;
     margin-left: 1vw;
     margin-right: 1vw;
-    box-shadow: 0 0 0.5em ${({ theme }) => theme.black};
+    box-shadow: 0 0 0.5vw ${({ theme }) => theme.black};
     border-radius: 1vw;
     border: 0.06vw solid black;
 
