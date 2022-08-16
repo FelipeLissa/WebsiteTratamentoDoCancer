@@ -1,31 +1,29 @@
-import {NavLinkContainer} from './styles'
+import { NavLinkContainer } from './styles';
 import Link from 'next/link';
-import {useRouter} from 'next/router'
-
-
+import { useRouter } from 'next/router';
 
 interface Props {
-    title: string;
-    path: string;
-    includes?:boolean;
+   title: string;
+   path: string;
+   includes?: boolean;
 }
 
-export default function NavLink( {title, path, includes=false}: Props) {
-    const router = useRouter()
+export default function NavLink({ title, path, includes = false }: Props) {
+   const router = useRouter();
 
-    function verifyIfIsActive () {
-        if(includes) {
-            return router.pathname.includes(path);
-        }
-        return path === router.pathname
-    }
+   function verifyIfIsActive() {
+      if (includes) {
+         return router.pathname.includes(path);
+      }
+      return path === router.pathname;
+   }
 
-    const isActive = verifyIfIsActive()
-    return (
-        <NavLinkContainer isActive={isActive}>
-            <Link href={path}>
+   const isActive = verifyIfIsActive();
+   return (
+      <NavLinkContainer isActive={isActive}>
+         <Link href={path}>
             <p>{title}</p>
-            </Link>
-        </NavLinkContainer>
-    )
+         </Link>
+      </NavLinkContainer>
+   );
 }

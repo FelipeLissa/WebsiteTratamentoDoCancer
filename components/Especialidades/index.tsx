@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import { Title } from '../Titles';
 
 import { Container } from './styles';

@@ -14,7 +14,7 @@ export function TogglerQuestionsAmbient() {
           Em primeiro lugar, não fique desesperado pois todos os tipos de câncer tem tratamento. Segundo, fale com seus familiares a respeito, pois são eles que vão dar todo o apoio necessário para vencer esta doença.</p>
         <TogglerQuestions title='O TRATAMENTO DO CANCER É UMA URGÊNCIA?' subtitle={undefined}>
           <ul>
-            <li><BsFillCaretRightFill />Em geral, não. Porém, em quase todos os casos, quanto antes for tratado, melhor.</li>
+            <li><BsFillCaretRightFill />Em geral, não. Porém quanto antes for tratado melhor.</li>
           </ul>
         </TogglerQuestions>
 
