@@ -63,7 +63,7 @@ export default function Form() {
 
   return (
     <FormStructure>
-      <h1>Enviar uma mensagem</h1>
+      <h1 className='title'>Enviar uma mensagem</h1>
       <FormContainer onSubmit={handleSubmit}>
         <Input
           placeholder="Nome"

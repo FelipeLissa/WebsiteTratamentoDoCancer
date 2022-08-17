@@ -47,9 +47,10 @@ export const FormStructure = styled.div`
    display: flex;
    flex-direction: column;
 
-   > h1 {
-      margin-bottom: 1vw;
-   }
+   .title {
+         margin-bottom: 1vw;
+         font-size: 2vw;
+      }
 `;
 
 export const FormContainer = styled.form`
