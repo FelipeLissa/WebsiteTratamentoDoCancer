@@ -1,89 +1,38 @@
 import styled from 'styled-components';
-import { lighten } from 'polished';
 
-export const Container = styled.header`
+export const Container = styled.div`
    display: flex;
-   justify-content: center;
-   height: 7vw;
-   margin: 0.4vw 0 -0.6vw 0;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: center;
+   width: 60.5vw;
+   height: 2.6vw;
+   margin: 2vw 7.6vw 0 15.2vw;
+   gap: 2vw;
 
-   img {
-      width: 15vw;
-      height: 7vw;
-   }
-
-   ul {
-      width: 90%;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      justify-content: space-between;
-   }
-
-   @media only screen and (min-width: 768px) {
-      /* default iPad screens */
-      ul {
-         gap: 0.5rem;
-      }
-   }
-   @media only screen and (min-width: 900px) {
-      /* styles for browsers larger than 960px; */
-      ul {
-         gap: 1rem;
-      }
-   }
-   @media only screen and (min-width: 1440px) {
-      /* styles for browsers larger than 1440px; */
-      ul {
-         gap: 3rem;
-      }
-   }
-   @media only screen and (min-width: 2000px) {
-      /* for sumo sized (mac) screens */
-   }
-   @media only screen and (max-device-width: 480px) {
-      /* styles for mobile browsers smaller than 480px; (iPhone) */
-   }
-`;
-
-interface NavLinkProps {
-   isActive: boolean;
-}
-export const NavLinkContainer = styled.li<NavLinkProps>`
-   p {
-      max-width: 10rem;
-      font-family: gravesend-sans, sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 1.2vw;
-      text-transform: uppercase;
-      color: ${(props) =>
-         props.isActive ? props.theme.black : lighten(0.5, props.theme.black)};
-      transition: 0.5s;
-
-      &:hover {
-         transform: scale(1.1);
-         cursor: pointer;
-         color: ${(props) =>
-            props.isActive
-               ? lighten(0.2, props.theme.black)
-               : lighten(0.2, props.theme.black)};
-      }
+   a{
+      font-size: 1vw;
+      transition: all 0.2s ease-in-out;
+   } a:hover {
+      transform: scale(1.1);
+      text-decoration: underline;
+      color: black;
    }
 
-   @media only screen and (max-width: 1080px) {
-      /* styles for browsers larger than 960px; */
+   .header-logo{
+      width: 6vw;
+      height: 1.75vw;
+      transition: all 0.2s ease-in-out;
+      margin-top: 0.5vw;
+      margin-left: 2vw;
+   }.header-logo:hover{
+      transform: scale(1.3);
    }
-   @media only screen and (max-width: 1440px) {
-      /* styles for browsers larger than 1440px; */
+   .sign{
+      border: 0.06vw solid black;
+      padding: 0.5vw;
+      border-radius: 0.5vw;
+      background: none;
    }
-   @media only screen and (max-width: 2000px) {
-      /* for sumo sized (mac) screens */
-   }
-   @media only screen and (max-device-width: 480px) {
-      /* styles for mobile browsers smaller than 480px; (iPhone) */
-   }
-   @media only screen and (device-width: 768px) {
-      /* default iPad screens */
-   }
+
 `;

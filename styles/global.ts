@@ -22,12 +22,16 @@ img {
   width: 100%;
   max-width: 100%;
 }
+a {
+  color:black;
+}
 
 ul {
   list-style: none;
 }
 button {
   cursor: pointer;
+  border:none;
 }
 a {
   text-decoration:none;

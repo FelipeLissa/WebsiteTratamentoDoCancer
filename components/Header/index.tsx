@@ -1,18 +1,36 @@
-import Image from 'next/image';
-import NavLink from './NavLink';
-import { Container } from './styles';
+import { Avatar, Dropdown, Grid, Text, User } from "@nextui-org/react";
+import Link from "next/link";
+import { Container } from "./styles";
 
 export function Header() {
   return (
     <Container>
-      <ul>
-        <li><NavLink title="início" path="/"></NavLink></li>
-        <li><NavLink title="Sobre o Câncer" path="/sobreocancer" includes></NavLink></li>
-        <li><NavLink title="Especialidades" path="/especialidades" includes></NavLink></li>
-        <li><NavLink title="Perguntas Frequentes" path="/perguntas" includes></NavLink></li>
-        <li><NavLink title="Contatos e Localização" path="/contato" includes></NavLink></li>
-        <li><img src="/lgoocerta1.png" alt="logo" ></img></li>
-      </ul>
+      <Link href={""}>
+        <img src={"./logo22.png"} className="header-logo"></img>
+      </Link>
+      <Link href={""}>
+        <a>Destinations</a>
+      </Link>
+      <Link href={""}>
+        <a>Hotels</a>
+      </Link>
+      <Link href={""}>
+        <a>Flights</a>
+      </Link>
+      <Link href={""}>
+        <a>Bookings</a>
+      </Link>
+      <Link href={""}>
+        <a>Login</a>
+      </Link>
+      <Link href={""}>
+        <a>
+          <button className="sign">Sign up</button>
+        </a>
+      </Link>
+      <Link href={""}>
+        <a>EN</a>
+      </Link>
     </Container>
   );
 }

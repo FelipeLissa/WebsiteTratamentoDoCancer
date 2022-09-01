@@ -1,33 +1,33 @@
-import { Container } from './styles';
-import { AiOutlineWhatsApp, AiOutlineInstagram } from 'react-icons/ai';
+import { Container } from "./styles";
 
 export function Footer() {
-   function handleRedirect(url: string) {
-      window.open(url);
-   }
+  return (
+    <Container>
+      <div className="content">
+        <div className="content-logo">
+          <img className="content-logo" src="/logo43.png"></img>
+        </div>
+        <div className="column">
+          <a className="title">Company</a>
+          <a className="a">About</a>
+          <a className="a">Careers</a>
+          <a className="a">Mobile</a>
+        </div>
 
-   function handleScrollTop() {
-      window.scroll({
-         top: 0,
-         behavior: 'smooth',
-      });
-   }
+        <div className="column">
+          <a className="title">Contact</a>
+          <a className="a">Help/FAQ</a>
+          <a className="a">Press</a>
+          <a className="a">Afiliates</a>
+        </div>
 
-   return (
-      <Container>
-         <div className="container">
-            <button onClick={handleScrollTop} type="button">
-               Voltar ao Topo
-            </button>
-            <section>
-               <AiOutlineWhatsApp
-                  onClick={() => handleRedirect('')}
-               ></AiOutlineWhatsApp>
-               <AiOutlineInstagram
-                  onClick={() => handleRedirect('')}
-               ></AiOutlineInstagram>
-            </section>
-         </div>
-      </Container>
-   );
+        <div className="column">
+          <a className="title">More</a>
+          <a className="a">Airline fees</a>
+          <a className="a">Airline</a>
+          <a className="a">Low fare tips</a>
+        </div>
+      </div>
+    </Container>
+  );
 }
